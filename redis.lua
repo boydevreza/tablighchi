@@ -45,4 +45,3 @@ end
 
 
 return redis
-r
