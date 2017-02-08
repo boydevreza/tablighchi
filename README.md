@@ -1,4 +1,4 @@
-#[Tablighchi](http://telegram.me/telediamondch)
+
 
 ستاره فراموش نشه
 
@@ -6,7 +6,7 @@
 
 #نصب
 ```
-git clone https://github.com/Mohammadrezar/tablighchi.git && cd tablighchi && chmod 777 install.sh && chmod +x diamond.sh && ./install.sh
+git clone https://github.com/boydevreza/tablighchi.git && cd tablighchi && chmod 777 install.sh && chmod +x bottabchi.sh && ./install.sh
 ```
  
 #ساختن و ران کردن
@@ -41,7 +41,7 @@ Enter Sudo Id
 
 شماره  بصورت زیر وارد کنید
 
-+7968315****
++7.............****
 
 سپس کد رو وارد کنید
 
@@ -93,14 +93,3 @@ python3 creator.py
 برای ران کردن همه رباتها درصورت خاموشی کدهای زیررا وارد کنید
 
 
-```
-cd tablighchi
-
-./diamond.sh
-```
-
-#Ch: [@TeleDiamondCh](http://telegram.me/telediamondch)
-
-#Opened By: [@Mrr619](http://telegram.me/Mrr619)
-
-#Developer: Amirsbss
