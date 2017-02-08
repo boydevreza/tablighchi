@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+---@boydev
 wget "https://valtman.name/files/telegram-cli-1222"
 sudo apt-get install libreadline-dev
 sudo apt-get install libconfig-dev 
