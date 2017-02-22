@@ -120,7 +120,7 @@ function process(msg)
     }
     if msg.text:match("^[!/#]pm") and is_sudo(msg) and #matches == 3 then
       tdcli.sendMessage(tonumber(matches[2]), 0, 1, matches[3], 1, "md")
-      return "_پیام شما ارسال شد_"
+      return "_پیام در کل گپا پخش شد_"
     end
   end
   do
@@ -192,40 +192,40 @@ function process(msg)
   end
   if msg.text:match("^[!/#]help$") and is_sudo(msg) then
     local text = [[
-راهنمای فارسی تبچی شما:😛
-🌐/block (id)
+راهنمای فارسی تبچی شما:
+/block (id)
 بلاک کردن از خصوصي ربات
-🌐/unblock (id)
+/unblock (id)
 آن بلاک کردن از خصوصي ربات
-🌐/panel
+/panel
 پنل مديريت ربات
-🌐/addsudo (id)
+/addsudo (id)
 اضافه کردن به سودوهاي  ربات
-🌐/remsudo (id)
+/remsudo (id)
 حذف از ليست سودوهاي ربات
-🌐/bc (text)
+/bc (text)
 ارسال پيام به همه
-🌐/fwd {all/gps/sgps/users} (by reply)
+/fwd {all/gps/sgps/users} (by reply)
 فوروارد پيام به همه/گروه ها/سوپر گروه ها/کاربران
-🌐/echo (text)
+/echo (text)
 تکرار متن
-🌐/addedmsg (on/off)
+/addedmsg (on/off)
 تعیین روشن یا خاموش بودن پاسخ برای شر شن مخاطب
-🌐/setaddedmsg (text)
+/setaddedmsg (text)
 تعيين متن اد شدن مخاطب
-🌐/markread (on/off)
+/markread (on/off)
 روشن يا خاموش کردن بازديد پيام ها
-🌐/setanswer 'answer' text
+/setanswer 'answer' text
  تنظيم به عنوان جواب اتوماتيک
-🌐/delanswer (answer)
+/delanswer (answer)
 حذف جواب مربوط به
-🌐/answers
+/answers
 ليست جواب هاي اتوماتيک
-🌐/addmembers
+/addmembers
 اضافه کردن مخاطبين ربات به گروه
-🌐/exportlinks
+/exportlinks
 دريافت لينک هاي ذخيره شده توسط ربات
-🌐/contactlist
+/contactlist
 دريافت مخاطبان ذخيره شده توسط ربات
 Join us » @botreborn_ch
 ]]
@@ -260,7 +260,7 @@ Join us » @botreborn_ch
           }, dl_cb, nil)
         else
           local text = [[
-_اطلاعات ربات_ :
+_در یک نگاه_ :
 _تعداد کاربران_ : ]] .. pvs .. [[
 
 _تعداد گروها_ : ]] .. gps .. [[
