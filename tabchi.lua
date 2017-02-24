@@ -1,4 +1,4 @@
--- @TeleDiamondCh
+
 
 function is_sudo(msg)
   local sudoers = {}
@@ -120,7 +120,7 @@ function process(msg)
     }
     if msg.text:match("^[!/#]pm") and is_sudo(msg) and #matches == 3 then
       tdcli.sendMessage(tonumber(matches[2]), 0, 1, matches[3], 1, "md")
-      return "_پیام در کل گپا پخش شد_"
+      return "_پیام شما ارسال شد_"
     end
   end
   do
@@ -192,42 +192,42 @@ function process(msg)
   end
   if msg.text:match("^[!/#]help$") and is_sudo(msg) then
     local text = [[
-راهنمای فارسی تبچی شما:
-/block (id)
-بلاک کردن از خصوصي ربات
-/unblock (id)
-آن بلاک کردن از خصوصي ربات
-/panel
-پنل مديريت ربات
-/addsudo (id)
-اضافه کردن به سودوهاي  ربات
-/remsudo (id)
-حذف از ليست سودوهاي ربات
-/bc (text)
-ارسال پيام به همه
-/fwd {all/gps/sgps/users} (by reply)
-فوروارد پيام به همه/گروه ها/سوپر گروه ها/کاربران
-/echo (text)
-تکرار متن
-/addedmsg (on/off)
-تعیین روشن یا خاموش بودن پاسخ برای شر شن مخاطب
-/setaddedmsg (text)
-تعيين متن اد شدن مخاطب
-/markread (on/off)
-روشن يا خاموش کردن بازديد پيام ها
-/setanswer 'answer' text
- تنظيم به عنوان جواب اتوماتيک
-/delanswer (answer)
-حذف جواب مربوط به
-/answers
-ليست جواب هاي اتوماتيک
-/addmembers
-اضافه کردن مخاطبين ربات به گروه
-/exportlinks
-دريافت لينک هاي ذخيره شده توسط ربات
-/contactlist
-دريافت مخاطبان ذخيره شده توسط ربات
-Join us » @botreborn_ch
+#راهنما
+*/block (id)*
+_بلاک کردن از خصوصي ربات_
+*/unblock (id)*
+_آن بلاک کردن از خصوصي ربات_
+*/panel*
+_پنل مديريت ربات_
+*/addsudo (id)*
+_اضافه کردن به سودوهاي  ربات_
+*/remsudo (id)*
+_حذف از ليست سودوهاي ربات_
+*/bc (text)*
+_ارسال پيام به همه_
+*/fwd {all/gps/sgps/users}* (by reply)
+_فوروارد پيام به همه/گروه ها/سوپر گروه ها/کاربران_
+*/echo (text)*
+_تکرار متن_
+*/addedmsg (on/off)*
+_تعیین روشن یا خاموش بودن پاسخ برای شر شن مخاطب_
+*/setaddedmsg (text)*
+_تعيين متن اد شدن مخاطب_
+*/markread (on/off)*
+_روشن يا خاموش کردن بازديد پيام ها_
+*/setanswer 'answer' text*
+_ تنظيم به عنوان جواب اتوماتيک_
+*/delanswer (answer)*
+_حذف جواب مربوط به_
+*/answers*
+_ليست جواب هاي اتوماتيک_
+*/addmembers*
+_اضافه کردن مخاطبين ربات به گروه_
+*/exportlinks*
+_دريافت لينک هاي ذخيره شده توسط ربات_
+*/contactlist*
+_دريافت مخاطبان ذخيره شده توسط ربات_
+*Join* _us_ >> @botreborn_ch
 ]]
     return text
   end
@@ -260,7 +260,7 @@ Join us » @botreborn_ch
           }, dl_cb, nil)
         else
           local text = [[
-_در یک نگاه_ :
+_اطلاعات ربات_ :
 _تعداد کاربران_ : ]] .. pvs .. [[
 
 _تعداد گروها_ : ]] .. gps .. [[
