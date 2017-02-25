@@ -240,7 +240,7 @@ _دريافت مخاطبان ذخيره شده توسط ربات_
       return "_کاربر انبلاک شد_"
     end
   end
-  if msg.text:match("^[!/#]امار$") and is_sudo(msg) then
+  if msg.text:match("^[!/#]امار") and is_sudo(msg) then
     do
       local gps = redis:scard("tabchi:" .. tabchi_id .. ":groups")
       local sgps = redis:scard("tabchi:" .. tabchi_id .. ":channels")
